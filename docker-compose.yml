@@ -1,0 +1,8 @@
+---
+services:
+  demo-viewer:
+    build: .
+    volumes:
+      - ./Demos:/usr/share/nginx/html/Demos
+    ports:
+      - "8080:80"
